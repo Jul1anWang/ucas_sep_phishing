@@ -1,0 +1,295 @@
+@media screen {
+
+    /* 侧边栏 */
+    .b-fs-side {
+        margin: 20px 0 0 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+
+    .ie7 .b-fs-side {
+        min-width: 316px;
+    }
+
+    .m-applogin-title {
+        margin: 0 0 20px 0;
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid #ddd;
+        color:#888;
+        line-height: normal;
+        font-weight: normal;
+    }
+
+    .m-applogin-head .nav {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .m-applogin-head .nav li {
+        position: relative;
+        zoom: 1;
+    }
+
+    .m-applogin-head .nav li a {
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        color: #999;
+    }
+
+    .m-applogin-head .nav li a:hover {
+        background-color: transparent;
+        border-bottom-color: #999;
+        color: #666;
+    }
+
+    .m-applogin-head .nav .active a {
+        margin: 0;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #FC4C03;
+        color: #666;
+        font-size: 18px;
+    }
+
+    .m-applogin-head .nav .active a:hover,
+    .m-applogin-head .nav .active a:focus {
+        background-color: transparent;
+        border-bottom-color: #FC4C03;
+        color: #666;
+    }
+
+    .m-applogin-head .nav .help-link {
+        position: absolute;
+        top: 3px;
+        right: 0px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .m-applogin-head .nav .help-link:hover,
+    .m-applogin-head .nav .help-link:focus {
+        background-color: transparent;
+        color: #0066cc;
+    }
+
+    .m-applogin-head .nav .help-link span {
+        display: none;
+    }
+
+    .ie7 .m-applogin-head .nav .help-link {
+        right: -10px;
+    }
+
+    .b-fs-side #appform {
+        margin-bottom: 50px;
+    }
+
+    .b-fs-side #appform .control-group label {
+        display: none;
+    }
+
+    .b-fs-side #appform .control-group .controls .input-icon {
+        padding-left: 27px;
+    }
+
+    .b-fs-side #appform .control-group .controls .input-icon input {
+        margin-bottom: 0;
+    }
+
+    .ie7 #appform .controls input.span12 {
+        float: left;
+        width: 91%;
+        height: 20px;
+        min-height: 20px;
+    }
+
+    .b-fs-side #appform .form-actions {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .b-fs-side #appform .blbr-link {
+        text-align: right;
+        color:#ddd;
+    }
+
+    .b-fs-side #appform .blbr-link a {
+        color:#666;
+        font-size: 12px;
+    }
+
+    .b-fs-side #appform .blbr-link a:hover {
+        color:#333;
+    }
+
+    /*  */
+    .m-applogin-slink {
+        margin: 0 0 30px 0;
+        padding: 0;
+    }
+
+    .m-applogin-slink li {
+        overflow: hidden;
+        margin: 0 0 10px 0;
+        padding: 0;
+        list-style-type: none;
+        white-space:nowrap;
+        color:#999;
+    }
+
+    .m-applogin-slink li a {
+        color:#999;
+        text-decoration: none;
+    }
+
+    .m-applogin-slink li a:hover {
+        color:#333;
+    }
+
+    .m-applogin-slink li a i {
+        color:#999;
+    }
+
+    .m-applogin-slink li a:hover i {
+        color:#333;
+    }
+
+
+    .m-applogin-list {
+        margin: 40px 0;
+        padding: 0;
+    }
+
+    .m-applogin-list .mal-box {
+        position: relative;
+        /*height: 90px;*/
+        margin-bottom: 40px;
+    }
+
+    .m-applogin-list .mal-box img {
+        position: absolute;
+        top:10px;
+        left: 0;
+    }
+
+    .m-applogin-list .mal-box h4 {
+        margin: 0 0 10px 65px;
+        color:#666;
+    }
+
+    .m-applogin-list .mal-box p {
+        margin: 0 0 0 65px;
+        color:#999;
+    }
+
+
+    .m-applogin-imglink {
+        margin-left: 0;
+        margin-bottom: 30px;
+        list-style-type: none;
+    }
+
+    .m-applogin-imglink li {
+        display: inline-block;
+        margin: 0 5px 5px 5px;
+    }
+
+    .ie7 .m-applogin-imglink li {
+        display: inline;
+        zoom: 1;
+    }
+
+    .m-applogin-imglink li img {
+        width: 200px;
+        height: 80px;
+        border: 2px solid #fff;
+    }
+
+
+
+    /* 单行搜索 */
+    .m-line-search {
+        overflow: hidden;
+        margin-bottom: 30px;
+        height: 38px;
+    }
+
+    .m-line-search form {
+        position: relative;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .m-line-search form span {
+        display: block;
+        margin-right: 45px;
+    }
+
+    .m-line-search form input {
+        /*display: inline-block;*/
+        margin: 0 0 0 0;
+        padding: 8px 10px;
+        width: 100%;
+        height: 22px;
+        background-color: #e5e5e5;
+        border-width: 0;
+        box-shadow: none;
+        -webkit-transition:background-color 0.2s ease-in-out 0s;
+           -moz-transition:background-color 0.2s ease-in-out 0s;
+             -o-transition:background-color 0.2s ease-in-out 0s;
+                transition:background-color 0.2s ease-in-out 0s;
+    }
+
+    .ie7 {}
+
+    .m-line-search form input:hover,
+    .m-line-search form input:focus {
+        background-color: #ccc;
+    }
+
+    .m-line-search form button {
+        position: absolute;
+        top:0;
+        right: 0;
+        display: inline-block;
+        margin: 0;
+        padding: 8px 16px;
+        height: 38px;
+        line-height: 22px;
+        color:#fff;
+        font-weight: normal;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #333;
+        border: none;
+        *border: 0;
+        *zoom: 1;
+        -webkit-transition:background-color 0.2s ease-in-out 0s;
+           -moz-transition:background-color 0.2s ease-in-out 0s;
+             -o-transition:background-color 0.2s ease-in-out 0s;
+                transition:background-color 0.2s ease-in-out 0s;
+    }
+    .m-line-search form button:hover,
+    .m-line-search form button:focus {
+        background-color: #000;
+    }
+
+    .m-line-search formbutton span {
+        display: none;
+    }
+    
+    	.row table{
+		position:relative;
+		top:6px;
+	}
+	.row table{
+		position: relative;
+		top:6px;
+	}
+	.row table td{
+		padding:4px 10px;
+		color:#fff;
+	}
+
+}

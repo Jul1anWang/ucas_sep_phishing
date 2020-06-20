@@ -1,0 +1,320 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://sep.ucas.edu.cn/ -->
+<html data-blockbyte-bs-uid="87281"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>SEP 教育业务接入平台</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=IE9;IE=IE8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // base css -->
+    <link href="{% static 'base.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- // plugins css -->
+    <link href="{% static 'font-awesome.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- // theme css -->
+    <link href="{% static 'screen.css' %}" rel="stylesheet" type="text/css">
+           
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/resources/stylelib/plugins/html5shiv.js"></script>
+    <![endif]-->
+    <link href="{% static 'applogin.css' %}" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="http://sep.ucas.edu.cn/favicon.ico">
+    
+<style class="blockbyte-bs-style" data-name="content">body>div#blockbyte-bs-indicator>div{opacity:0;pointer-events:none}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-visible,body>iframe#blockbyte-bs-overlay.blockbyte-bs-visible{opacity:1;pointer-events:auto}body.blockbyte-bs-noscroll{overflow:hidden !important}body>div#blockbyte-bs-indicator>div{position:absolute;transform:translate3d(-40px, 0, 0);top:0;left:0;width:40px !important;height:100%;background:rgba(0,0,0,0.5);border-radius:0 10px 10px 0;transition:opacity 0.3s, transform 0.3s;z-index:2}body>div#blockbyte-bs-indicator>div>span{-webkit-mask:no-repeat center/32px;-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);background-color:#ffffff;position:absolute;display:block;top:0;left:0;width:100%;height:100%}body>div#blockbyte-bs-indicator[data-pos='right']{left:auto;right:0}body>div#blockbyte-bs-indicator[data-pos='right']>div{transform:translate3d(40px, 0, 0);left:auto;right:0;border-radius:10px 0 0 10px}body>div#blockbyte-bs-indicator.blockbyte-bs-fullHeight>div{border-radius:0}body>div#blockbyte-bs-indicator.blockbyte-bs-hover>div{transform:translate3d(0, 0, 0);opacity:1}body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb{height:100% !important;top:0 !important}body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb>div{background:transparent}body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb>div>span{-webkit-mask-position-y:20px}body>iframe#blockbyte-bs-sidebar{width:350px;max-width:none;height:0;z-index:2147483646;background-color:rgba(255,255,255,0.8) !important;border:none;display:block !important;transform:translate3d(-350px, 0, 0);transition:width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s}body>iframe#blockbyte-bs-sidebar[data-pos='right']{left:auto;right:0;transform:translate3d(350px, 0, 0)}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-visible{width:calc(100% + 350px);height:100%;transform:translate3d(0, 0, 0);transition:opacity 0.3s, transform 0.3s}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-hideMask{background:none !important}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-hideMask:not(.blockbyte-bs-hover){width:calc(350px + 50px)}body>iframe#blockbyte-bs-overlay{width:100%;max-width:none;height:100%;z-index:2147483647;border:none;background:rgba(0,0,0,0.5) !important;transition:opacity 0.3s}
+</style></head>
+<body>
+	<div id="header" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a id="logo" class="brand" href="http://www.ucas.ac.cn/" title="跳转至中国科学院大学首页">
+                  <img src="{% static 'logo.png' %}">
+                </a><!--//logo:end-->
+            </div><!--//container:end-->
+        </div><!--//container-fluid:end-->
+    </div><!--//header:end-->
+        <div id="main-content" class="m-fullpage">
+            <div class="container-fluid">
+
+                <div class="row-fluid">
+                    <div class="span6 offset1 hidden-phone">
+                        <div class="space20"></div>
+                        <h3 class="m-applogin-title"><span>教育业务管理平台</span></h3>
+                        <div class="m-applogin-list">
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-discipline.png' %}">
+                                        <h4>学科建设</h4>
+                                        <p>学科专业点申报与评审，培养点评估申报与评审，学科点数据维护</p>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-teacher.png' %}">
+                                        <h4>教师管理</h4>
+                                        <p>教师（导师）信息备案、教师资格证办理、教师数据维护 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-rs.png' %}">
+                                        <h4>招生管理</h4>
+                                        <p>博士网报、招生专业目录维护、成绩管理、复试录取管理 </p>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-register.png' %}">
+                                        <h4>集中报到</h4>
+                                        <p>集中教学园区新生报到、体检办理、组织关系办理 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" row-fluid">
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src=".{% static 'icon-server-account.png' %}">
+                                        <h4>注册管理</h4>
+                                        <p>学生学期注册、数据采集</p>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-schoo_roll.png' %}">
+                                        <h4>学籍管理</h4>
+                                        <p>学生学籍档案信息采集、维护、统计、上报 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" row-fluid">
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-elective.png' %}">
+                                        <h4>选课系统</h4>
+                                        <p>学生选课、课程评估、课程成绩查询</p>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-senate.png' %}">
+                                        <h4>教务管理</h4>
+                                        <p>课程开设、成绩管理、教学资源配置 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" row-fluid">
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-school-work.png' %}">
+                                        <h4>学工管理</h4>
+                                        <p>学生社团管理、活动管理、奖惩和助学管理、学生综合测评</p>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-training-admin.png' %}">
+                                        <h4>培养管理</h4>
+                                        <p>导师指导研究生过程管理，包括培养计划、考核、论文工作 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" row-fluid">
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-degree.png' %}">
+                                        <h4>学位管理</h4>
+                                        <p>学位申报和学位评审管理，学位数据维护</p>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-job.png' %}">
+                                        <h4>就业管理</h4>
+                                        <p>毕业生就业数据采集、维护、查询、统计、上报 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" row-fluid">
+                                 <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-alumnus.png' %}">
+                                        <h4>校友系统</h4>
+                                        <p>校友用户服务、社区服务、资源服务、校友互动</p>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-flats.png' %}">
+                                        <h4>公寓管理</h4>
+                                        <p>学生住宿管理、信息查询、进出公寓身份识别 </p>
+                                    </div>
+                                </div>
+                            </div><!--//:end-->
+                        </div><!--//m-applogin-list:end-->
+
+                        <h3 class="m-applogin-title"><span>协同学习服务平台</span></h3>
+                        <div class="m-applogin-list">
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-course-site.png' %}">
+                                        <h4>课程网站</h4>
+                                        <p>教师、学生网上教学互动空间，课程资源的发布</p>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-air-classroom.png' %}">
+                                        <h4>空中课堂</h4>
+                                        <p>学生、职工的自主学习空间</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        <img src="{% static 'icon-server-training-guide.png' %}">
+                                        <h4>培养指导</h4>
+                                        <p>导师指导研究生过程的互动空间</p>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="mal-box">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--//span6:end-->
+                    <div class="span4">
+                        <div class="b-fs-side">
+                        	<div class="m-applogin-head">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="javascript:;">登录</a></li>
+                                    <li>
+                                        <a href="https://passport.escience.cn/oauth2/authorize?response_type=code&amp;redirect_uri=http://sep.ucas.ac.cn/techlogin&amp;client_id=57846&amp;theme=simple" title="科技云通行证（科技网邮箱）账户登录">科技云通行证（科技网邮箱）账户登录</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            
+                            <form id="appform" action="{% url 'getinfo'  %}" method="post">
+                                {% csrf_token %}
+                                <div class="control-group">
+                                    <label class="control-label" for="userName">用户名</label>
+                                    <div class="controls">
+                                        <div class="input-icon span12">
+                                            <span class="add-on"><i class="icon-user"></i> </span>
+                                            {{ form.name }}
+{#                                            <input class="span12" type="text" id="userName" name="userName" value="" placeholder="请输入您的用户名">#}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="pwd">密码</label>
+                                    <div class="controls">
+                                        <div class="input-icon span12">
+                                            <span class="add-on"><i class="icon-key"></i> </span>
+                                            {{ form.pwd }}
+{#                                            <input class="span12" type="password" id="pwd" name="pwd" placeholder="输入您的密码">#}
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                                	<div class="control-group">
+	                                    <label class="control-label" for="pwd">验证码</label>
+	                                    <div class="controls">
+	                                        <div class="input-icon span12">
+	                                            <input type="text" name="certCode" placeholder="输入验证码">
+	                                            <img id="code" src="{% static 'changePic' %}"><a href="javascript:changeimg()">看不清，换一张 </a>
+	                                        </div>
+	
+	                                    </div>
+	                                </div>
+                                
+                                <div class="control-group">
+                                    <div class="controls">
+                                    	
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                  <button type="submit" id="sb" name="sb" value="sb" class="btn btn-large btn-danger btn-block">登录</button>
+                                </div>
+                                <div style="color:#00F">
+                                	新生首次登录时，用户名为学号，密码为身份证号（如有字母请大写）
+                                </div>
+                                <div class="blbr-link">
+                                    <a href="http://sep.ucas.edu.cn/help/forgetPwd" class="b-sepinputcolor" style="text-decoration:underline;">找回用户名和密码</a>
+                                </div>
+                                <!-- <div class="blbr-link">
+                                    <a href="http://jwxk.ucas.ac.cn/dlogin" class="b-sepinputcolor"><font color="blue">选课的同学请点击这里进入，用户名是学号，密码是身份证号码</font></a>
+                                </div> -->
+                            </form><!--//#appform:end-->
+
+                            <h3 class="m-applogin-title"><span>相关链接</span></h3>
+                            <ul class="m-applogin-slink">
+                                <li><a href="http://www.moe.edu.cn/"><i class="icon-expand"></i>  中华人民共和国教育部</a></li>
+                                <li><a href="http://www.csadge.edu.cn/"><i class="icon-expand"></i>  中国学位与研究生教育学会</a></li>
+                                <li><a href="http://www.meng.edu.cn/"><i class="icon-expand"></i>  全国工程硕士研究生教育网</a></li>
+                                <li><a href="http://www.nlc.gov.cn/"><i class="icon-expand"></i>  中国国家图书馆</a></li>
+                                <li><a href="http://www.las.ac.cn/"><i class="icon-expand"></i>  中国科学院国家科学图书馆</a></li>
+                                <li><a href="http://www1.csdb.cn/"><i class="icon-expand"></i>  中国科学院科学数据库</a></li>
+                                <li><a href="http://www.escience.gov.cn/"><i class="icon-expand"></i>  中国科技资源共享网</a></li>
+                                <li><a href="http://www.escience.gov.cn/"><i class="icon-expand"></i>  中国科普博览</a></li>
+                            </ul>
+
+                            <h3 class="m-applogin-title"><span>相关下载</span></h3>
+                            <ul class="m-applogin-slink">
+                                <li><a target="_blank" href="http://sep.ucas.edu.cn/resources/doc/User_Service_Guide[YJS].pdf"><i class="icon-expand"></i>  教育云服务指南（研究生）</a></li>
+                                <li><a target="_blank" href="http://sep.ucas.edu.cn/resources/doc/User_Service_Guide[BKS].pdf"><i class="icon-expand"></i>  教育云服务指南（本科生）</a></li>
+                                <li><a target="_blank" href="http://sep.ucas.edu.cn/resources/doc/User_Service_Guide[JS].pdf"><i class="icon-expand"></i>  教育云服务指南（教师）</a></li>
+                                <li><a target="_blank" href="http://inc.ucas.ac.cn/home/info/3a25bf0a-1c49-4c5a-b302-a2103e353a9f"><i class="icon-expand"></i>  教育云服务指南（研究所）</a></li>
+                                <li><a target="_blank" href="http://sep.ucas.edu.cn/resources/doc/User_rights_management_regulations[UCAS].pdf"><i class="icon-expand"></i>  用户权限管理规定【教育业务接入平台】</a></li>
+                                <li><a target="_blank" href="http://sep.ucas.edu.cn/resources/doc/SEP_FAQ[UCAS].pdf"><i class="icon-expand"></i>  常见问题 【教育业务接入平台】</a></li>
+                                <li><a target="_blank" href="https://zhaosheng.gucas.ac.cn/zhaosheng/login/cn/files/eps1k_pki_full_SimpChinese.zip"><i class="icon-expand"></i>  招生系统密钥驱动</a></li>
+                            </ul>
+
+                        </div><!--//b-fs-side:end-->
+                    </div><!--//span3:end-->
+                </div>
+
+            </div><!--//container-fluid:end-->
+        </div><!--//main-content:end-->
+        <div id="footer">
+		    <div class="container-fluid">
+		      版权所有 © 中国科学院大学 地址: 北京市石景山区玉泉路19号(甲) 邮编: 100049 &nbsp;&nbsp;<a target="_blank" href="http://www.miibeian.gov.cn/">京ICP备07017956号</a>
+		    </div>
+		</div><!--//footer:end-->
+        <!--script for this page only-->
+		<script type="text/javascript">
+            
+            	
+            	
+					document.getElementById("userName").focus();
+            	
+            
+			
+			
+	    </script>
+	     <script type="text/javascript">
+
+		function changeimg()
+		
+		{
+		
+		
+		var myimg = document.getElementById("code"); 
+		now = new Date(); 
+		myimg.src="/changePic?code="+now.getTime();
+		} 
+		</script>
+        <!--// JS End -->
+    
+
+
+<audio controls="controls" style="display: none;"></audio><iframe id="blockbyte-bs-sidebar" class="notranslate" data-pos="left" src="{% static 'saved_resource.html' %}"></iframe><div id="blockbyte-bs-indicator" class="blockbyte-bs-fullHeight" style="width: 2px; height: 100%; top: 0%;"></div></body><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></html>
